@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAFA;
+    z-index: 10;
+    padding: 0.2rem 0.5rem;
+}
+.navbar .logo {
+    font-size: 2rem; /* Larger initial size */
+    transition: font-size 0.5s ease; /* Smoother transition */
+    font-weight: bold;
+    color: #000000de;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* .navbar.scrolled .logo {
+    font-size: 2rem; 
+    color: #000;
+}
+.navbar.scrolled {
+    background-color: #FAFAFA; 
+} */
+.nav-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    transition: opacity 0.5s ease;
+}
+.nav-right i {
+    color: #302d2de3;
+    font-size: 1rem;
+    margin-left: 1rem; /* Space between icons */
+}
+.table-container{
+    margin-top: 60px; /* Add some space between the navbar and the table container */
+    width: 90%; /* Adjust the width as necessary */
+    margin-left: auto; /* Center the table container */
+    margin-right: auto; 
+}
+.table-container h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.search {
+    width: 100%;
+    text-align:center;
+}
+#search-bar {
+  padding: 10px;
+  width: 250px;
+  box-sizing: border-box;
+  border: 1px solid #ced4da; /* Light border color */
+  border-radius: 20px; /* Rounded corners */
+  font-size: 14px;
+  margin: 0 auto; /* Center the search bar horizontally */
+  margin-bottom: 20px;
+  text-align: center;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    font-size: 14px;
+  }
+
+  h2{
+    font-family: 'Jost', sans-serif;
+    color: rgb(79, 79, 79);
+    padding: 5px;
+    text-align: center;
+  }
+
+  th, td {
+    border: 1px solid #f3efef;
+    padding: 12px;
+    text-align: left;
+  }
+ /* Media Queries for smaller screens */
+ @media screen and (max-width: 600px) {
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+    .navbar .logo {
+        font-size: 2rem;
+    }
+    .nav-right a:not(:last-child) {
+        display: none;
+    }
+
+    .nav-right a:last-child {
+        display: inline-block;
+    }
+    /* .hero-title {
+        font-size: 3rem;
+    }
+    .hero-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+    .featured-products {
+        margin-right: 0;
+    }
+    .product {
+        width: 100%;
+        margin-right: 0;
+    } */
+    .table th, .table td {
+        padding: 5px;
+        font-size: 12px;
+      }
+  
+      .table tbody tr td[data-label="Brand"]::before,
+      .table tbody tr td[data-label="Name"]::before {
+        content: " ";
+        font-weight: bold;
+      }
+}
